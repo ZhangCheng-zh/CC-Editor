@@ -3,7 +3,9 @@
 
 > CC editor is a simple small extensible mobile-friendly WYSIWYG text editor for web, with no dependencies
 
-[Live demo](https://jaredreich.com/pell)
+[Live demo](https://zhangcheng-zh.github.io/CC-Editor/demo.html)
+
+![](http://www.giphy.com/gifs/2wWvAuaiGRZmvUlhDF)
 
 ## Features
 
