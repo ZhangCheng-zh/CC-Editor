@@ -1,0 +1,30 @@
+{
+  "name": "cceditor",
+  "version": "1.0.2",
+  "description": "CC editor is a simple small extensible mobile-friendly WYSIWYG text editor for web, with no dependencies",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js --env.production --progress --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZhangCheng-zh/CC-Editor.git"
+  },
+  "keywords": [
+    "mobile-friendly",
+    "WYSIWYG"
+  ],
+  "author": "ZhangCheng",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ZhangCheng-zh/CC-Editor/issues"
+  },
+  "homepage": "https://github.com/ZhangCheng-zh/CC-Editor#readme",
+  "devDependencies": {
+    "css-loader": "^0.28.11",
+    "path": "^0.12.7",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.3"
+  }
+}

@@ -1,0 +1,50 @@
+.CCEditor {
+    position: relative;
+    border: 2px solid #333;
+    font-size: 14px;
+    min-width: 400px;
+    min-height: 300px;
+}
+
+.CCEditor .cc-toolsbar {
+    display: block;
+    height: 20px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #333;
+    list-style: none;
+    cursor: pointer;
+    font-size:12px;
+    line-height: 20px;
+}
+
+.CCEditor .cc-toolsbar button {
+    display: inline-block;
+    width: 20px;
+    height: 100%;
+    text-align: center;
+    border:none;
+    outline: none;
+    padding:0;
+    cursor: pointer;
+    background: transparent;
+}
+
+.CCEditor .cc-toolsbar .active {
+    color: #fff;
+    background:#aaa;
+}
+
+.CCEditor .cc-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 21px;
+    bottom: 0;
+    overflow: auto;
+    padding: 5px;
+    outline: none;
+}

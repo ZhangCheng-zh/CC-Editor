@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CC Editor</title>
+    <script src="./dist/cceditor.bundle.js"></script>
+</head>
+
+<body>
+    <h2>CC Editor Demo</h2>
+    <div id="cc-editor"></div>
+    <div>
+        Output:
+        <div id="output"></div>
+    </div>
+    <script>
+        (function (window) {
+            var $el = document.querySelector('#cc-editor');
+            var newCCEditor = new CCEditor({
+                el: $el,
+                onChange: (html) => {
+                    document.querySelector('#output').innerHTML = html;
+                },
+                actions: {
+                    custom: {
+                        name: 'custom',
+                        icon: 'C',
+                        title: 'Custom Action',
+                        handler: () => console.log('Do something!')
+                    },
+                },
+            });
+        })(window)
+    </script>
+    <style>
+        .CCEditor {
+            width: 500px;
+            height: 600px;
+            border-width: 2px;
+        }
+    </style>
+</body>
+
+</html>
