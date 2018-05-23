@@ -118,41 +118,12 @@ new CCEditor({
 - link
 - image
 
-#### Example
-
-```html
-<script src='./dist/cceditor/bundle.js'></script>
-<div id="cc-editor"></div>
-<div>
-  HTML output:
-  <div id="html-output" style="white-space:pre-wrap;"></div>
-</div>
-```
-
-```js
-
-const editor = new CCEditor({
-  element: document.getElementById('pell'),
-  onChange: html => {
-    document.getElementById('html-output').textContent = html
-  },
-  actions: {
-    custom: {
-      name: 'custom',
-      icon: '<b><u><i>C</i></u></b>',
-      title: 'Custom Action',
-      result: () => console.log('YOLO')
-    },
-  },
-})
-
-```
-
 #### Example 
 
 ```html
+<script src='./dist/cceditor.min.js'></script>
 <h2>CC Editor Demo</h2>
-<div id="cc-editor" style='width: 400px; height: 400px; border-width: 1px;'></div>
+<div id="cc-editor"></div>
 <div>
     Output:
     <div id="output"></div>
@@ -166,7 +137,15 @@ const editor = new CCEditor({
         el: $el,
         onChange: (html) => {
             document.querySelector('#output').innerHTML = html;
-        }
+        },
+        actions: {
+          custom: {
+            name: 'custom',
+            icon: '<b><u><i>C</i></u></b>',
+            title: 'Custom Action',
+            result: () => console.log('custom action')
+          },
+        },
     });
 })(window)
 ```
