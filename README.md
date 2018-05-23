@@ -5,7 +5,7 @@
 
 [Live demo](https://zhangcheng-zh.github.io/CC-Editor/demo.html)
 
-![](http://www.giphy.com/gifs/2wWvAuaiGRZmvUlhDF)
+![](https://raw.githubusercontent.com/ZhangCheng-zh/CC-Editor/master/demo.gif)
 
 ## Features
 
