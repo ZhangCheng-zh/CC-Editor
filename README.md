@@ -70,26 +70,17 @@ new CCEditor({
   // <HTMLElement>, required
   element: document.getElementById('some-id'),
 
-  // <Function>, optional 默认为
-  // (html) => console.log(html)
+  // <Function>, optional 
+  // default (html) => console.log(html)
   onChange: html => console.log(html),
 
-
-  // <Array[string | Object]>, string if overwriting, object if customizing/creating
-  // action.name<string> (only required if overwriting)
-  // action.icon<string> (optional if overwriting, required if custom action)
-  // action.title<string> (optional)
-  // action.result<Function> (required)
-  // Specify the actions you specifically want (in order)
   actions: {
-    bold: {},
     custom: {
       name: 'custom',
       icon: 'C',
       title: 'Custom Action',
       handler: () => console.log('Do something!')
     },
-    underline:{}
   },
 
   // classes<Array[string]> (optional)
